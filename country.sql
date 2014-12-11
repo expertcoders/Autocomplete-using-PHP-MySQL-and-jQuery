@@ -1,14 +1,12 @@
-Autocomplete-using-PHP-MySQL-and-jQuery
-=======================================
 
-Autocomplete using PHP/MySQL and jQuery
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
+--
+-- Database: `autocomplet`
+--
 
-Installation
-=======================================
-Import country Table into your database
-
-````sql
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `country`
@@ -69,22 +67,4 @@ INSERT INTO `country` (`country_id`, `country_name`) VALUES
 (42, 'kazakhstan'),
 (43, 'belgium'),
 (44, 'sweden');
-
-````
-
-Chnage your database credentials accordinng to your database in ajax_refresh.php
-
-````php
-
-function connect() {
-    return new PDO('mysql:host=localhost;dbname=DATABASE_NAME', 'DATABASE_USER', 'YOUR_DATABASE_PASSWORD', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-}
-
-
-````
-
-
-
-
-
 
